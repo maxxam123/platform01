@@ -3,7 +3,7 @@ on:
     branches:
     - main
     paths:
-    - 'tf/abc2'
+    - 'tf/abc2/abc.yaml'
 jobs:
   build:
     runs-on: ubuntu-latest
