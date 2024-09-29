@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'cluster/aws02/abc.yaml'
+   - 'cluster/aws02/cluster.yaml'
 jobs:
   build:
     runs-on: ubuntu-latest
