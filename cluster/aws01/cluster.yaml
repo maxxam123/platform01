@@ -12,10 +12,10 @@ terraform {
 }
 
 resource "aws_instance" "aws01" {
-  ami = "ami-01e444924a2233b07"
-  instance_type = "t2.micro"
-  subnet_id = "subnet-002308d00bad9957e"
+  ami = "AMI"
+  instance_type = "INS"
+  subnet_id = "SUB"
   tags = {
-    Name = "aws01"
+    Name = "TAG"
   }
 }
