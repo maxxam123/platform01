@@ -1,9 +1,9 @@
 on:
-  push:
-    branches:
-    - main
-    paths:
-    - 'tf/abc2/abc.yaml'
+ push:
+   branches:
+   - main
+   paths:
+   - 'tf/abc2/abc.yaml'
 jobs:
   build:
     runs-on: ubuntu-latest
