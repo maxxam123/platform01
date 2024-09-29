@@ -11,11 +11,11 @@ terraform {
   }
 }
 
-resource "aws_instance" "abc2" {
+resource "aws_instance" "aws02" {
   ami = "ami-01e444924a2233b07"
   instance_type = "t2.micro"
   subnet_id = "subnet-002308d00bad9957e"
   tags = {
-    Name = "abc2"
+    Name = "aws02"
   }
 }
