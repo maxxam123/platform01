@@ -29,9 +29,9 @@ jobs:
        with:
          terraform_version: 1.3.0
 
-#     - name: Terraform init
+     - name: Terraform init
 #       id: init
-#       run: terraform init -backend-config="bucket=dunhuang/terraform/s3/aws02/terraform.tfstate"
+       run: terraform init -backend-config="dunhuang-gansu-terraform-state" -backend-config="key=dunhuang/terraform/s3/bucket00/terraform.tfstate" -backend-config="region=eu-central-1"
        
 #     - name: Terraform Apply
 #       run: terraform apply -auto-approve -input=false
