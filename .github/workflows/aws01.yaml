@@ -17,4 +17,4 @@ jobs:
         - uses: actions/checkout@v3
         - name: test
           run: |
-            apt-get update && apt-get install -y gnupg software-properties-common curl
+            sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
