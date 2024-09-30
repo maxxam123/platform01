@@ -31,7 +31,7 @@ jobs:
 
      - name: Terraform init
        id: init
-       run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"  -backend-config="key=dunhuang/terraform/s3/aws01/terraform.tfstate"
+       run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"  -backend-config="key=dunhuang/terraform/s3/bucket00/terraform.tfstate"
        
      - name: Terraform Plan
 #       run: terraform plan -auto-approve -input=false
