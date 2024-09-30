@@ -16,8 +16,6 @@ jobs:
    runs-on: ubuntu-latest
    defaults:
      run:
-       shell: bash
-       # We keep Terraform files in the terraform directory.
        working-directory: cluster/aws01/
 
    steps:
@@ -31,7 +29,7 @@ jobs:
 
      - name: Terraform init
        id: init
-       run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"  -backend-config="key=dunhuang/terraform/s3/bucket00/terraform.tfstate"
+       run: terraform init
        
      - name: Terraform Plan
 #       run: terraform plan -auto-approve -input=false
