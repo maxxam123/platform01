@@ -33,5 +33,5 @@ jobs:
        id: init
        run: terraform init -backend-config="bucket=dunhuang/terraform/s3/aws01/terraform.tfstate"
        
-#     - name: Terraform Apply
-#       run: terraform plan -auto-approve -input=false
+     - name: Terraform Apply
+       run: terraform plan -auto-approve -input=false
