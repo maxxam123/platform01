@@ -11,7 +11,7 @@ provider "helm" {
 }
 
 resource "helm_release" "argocd" {
-  name = "argocd-aws03"
+  name = "argocd-NAME"
 
   repository = "https://argoproj.github.io/argo-helm"
   chart      = "argo-cd"
