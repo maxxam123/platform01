@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'cluster/aws01/cluster.yaml'
+   - 'cluster/aws01/**'
 
 
 env:
