@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'cluster/aws01/01-provider1.tf'
+   - 'cluster/aws01/01-provider.tf'
 
 
 env:
