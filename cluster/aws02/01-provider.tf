@@ -1,14 +1,11 @@
-provider "aws01" {
+provider "aws02" {
   region = "eu-central-1"
-  access_key = ${{ secrets.ACCESS_KEY }}
-  secret_key = ${{ secrets.SECRET_KEY }}
 }
-
 
 terraform {
   backend "s3" {
     bucket         = "dunhuang-gansu-terraform-state"
-    key            = "dunhuang/terraform/s3/aws01/terraform.tfstate"
+    key            = "dunhuang/terraform/s3/aws02/terraform.tfstate"
     region         = "eu-central-1"
     dynamodb_table = "terraform_state"
   }

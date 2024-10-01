@@ -1,15 +1,14 @@
-
 on:
  push:
    branches:
    - main
    paths:
-   - 'cluster/aws02/**'
+   - 'cluster/aws02/cluster1.yaml'
+
 
 env:
  AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
  AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
- BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE}}
 
 jobs:
  terraform:
@@ -19,7 +18,7 @@ jobs:
      run:
        shell: bash
        # We keep Terraform files in the terraform directory.
-       working-directory: cluster/aws02/
+       working-directory: cluster/aws02
 
    steps:
      - name: Checkout the repository to the runner
@@ -32,12 +31,7 @@ jobs:
 
      - name: Terraform init
        id: init
-       run: |
-         terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
-         ls -la
-         
-     - name: Terraform Plan
-       run: terraform plan -lock=false
+       run: terraform init -backend-config="bucket=dunhuang/terraform/s3/aws02/terraform.tfstate"
        
-#     - name: Terraform Apply
-#       run: terraform destroy -auto-approve -input=false -lock=false
+#     - name: Terraform Plan
+#       run: terraform plan -auto-approve -input=false

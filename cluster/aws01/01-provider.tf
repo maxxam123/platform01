@@ -1,12 +1,12 @@
-provider "aws" {
+provider "aws01" {
   region = "eu-central-1"
 }
 
 terraform {
   backend "s3" {
     bucket         = "dunhuang-gansu-terraform-state"
-    key            = "dunhuang/terraform/s3/bucket01/terraform.tfstate"
+    key            = "dunhuang/terraform/s3/aws01/terraform.tfstate"
     region         = "eu-central-1"
-    dynamodb_table = "terraform-state1"
+    dynamodb_table = "terraform_state"
   }
 }
