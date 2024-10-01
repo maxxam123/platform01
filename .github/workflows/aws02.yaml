@@ -33,6 +33,9 @@ jobs:
      - name: Terraform init
        id: init
        run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
+
+     - name: Terraform Apply
+       run: terraform destroy -auto-approve -input=false
        
 #     - name: Terraform Plan
 #       run: terraform plan
