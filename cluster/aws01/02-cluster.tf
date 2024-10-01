@@ -5,5 +5,6 @@ resource "aws_instance" "ins_nihao" {
   tags = {
     Name = "Ins nihao"
   }
+
 }
 
