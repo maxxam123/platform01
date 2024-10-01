@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'cluster/aws02/01-provider1.tf'
+   - 'cluster/aws01/01-provider1.tf'
 
 
 env:
@@ -18,7 +18,7 @@ jobs:
      run:
        shell: bash
        # We keep Terraform files in the terraform directory.
-       working-directory: cluster/aws02
+       working-directory: cluster/aws01
 
    steps:
      - name: Checkout the repository to the runner
