@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'cluster/aws02/01-provider.yaml'
+   - 'cluster/aws02/01-provider1.yaml'
 
 
 env:
@@ -31,7 +31,7 @@ jobs:
 
      - name: Terraform init
        id: init
-       run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state" -backend-config="key=dunhuang/terraform/s3/bucket00/terraform.tfstate" -backend-config="region=eu-central-1"
+       run: terraform init -backend-config="bucket=dunhuang-gansu-terraform-state" -backend-config="key=bucket00/terraform.tfstate" -backend-config="region=eu-central-1"
        
      - name: Terraform Plan
        run: terraform plan
