@@ -24,4 +24,5 @@ jobs:
             terraform -v
             cd cluster/aws01
             terraform init
+            terraform plan
             
