@@ -6,3 +6,4 @@ resource "aws_instance" "ins_nihao" {
     Name = "Ins nihao"
   }
 }
+
