@@ -4,7 +4,6 @@ provider "aws01" {
   secret_key = ${{ secrets.SECRET_KEY }}
 }
 
-
 terraform {
   backend "s3" {
     bucket         = "dunhuang-gansu-terraform-state"
