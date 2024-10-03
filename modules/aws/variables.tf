@@ -7,7 +7,7 @@ variable "instance_type" {
 variable "ami" {
   description = "ami"
   type = string
-  default = "ami-01002120012"
+  default = "ami-01e444924a2233b07"
 }
 
 variable "subnet_id" {
