@@ -3,7 +3,7 @@ on:
    branches:
    - main
    paths:
-   - 'delete/**'
+   - 'delete_cluster/**'
 
 
 env:
@@ -22,14 +22,14 @@ jobs:
           git clone https://github.com/maxxam123/platform01.git
           cd platform01/.github/workflows
           ls -la
-          rm -rf aws03.yaml
+          rm -rf aws02.yaml
           cd ../../../
           cd platform01/cluster
           ls -la
-          rm -rf aws03
+          rm -rf aws02
           cd ../../
           cd platform01/gitops
-          rm -rf aws03
+          rm -rf aws02
           cd ../..
 
       - name: Pushes to another repository
