@@ -7,7 +7,7 @@
 #  }
 #}
 
-#resource "aws_iam_user" "NAME_TERRAFORM" {
+#resource "aws_iam_user" "TERRAFORM" {
 #      name = var.tag
 #}
 
