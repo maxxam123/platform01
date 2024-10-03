@@ -7,6 +7,10 @@
 #  }
 #}
 
+#resource "aws_iam_user" "NAME" {
+#      name = var.tag
+#}
+
 resource "aws_iam_user" "demouser" {
       name = var.tag
 }
