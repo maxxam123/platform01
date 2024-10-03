@@ -22,14 +22,14 @@ jobs:
           git clone https://github.com/maxxam123/platform01.git
           cd platform01/.github/workflows
           ls -la
-          rm -rf aws02.yaml
+          rm -rf aws03.yaml
           cd ../../../
           cd platform01/cluster
           ls -la
-          rm -rf aws02
+          rm -rf aws03
           cd ../../
           cd platform01/gitops
-          rm -rf aws02
+          rm -rf aws03
           cd ../..
 
       - name: Pushes to another repository
