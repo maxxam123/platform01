@@ -18,7 +18,7 @@ jobs:
      run:
        shell: bash
        # We keep Terraform files in the terraform directory.
-       working-directory: cluster/aws04
+       working-directory: cluster/aws06
 
    steps:
      - name: Checkout the repository to the runner
@@ -33,6 +33,8 @@ jobs:
        id: init
        run: |
          cp ../../modules/aws/* .
+         sed -i -e "s/TERRAFORM/aws06/g" main.tf
+         sed -i -e "s/TERRAFORM/aws06/g" provider.tf
          terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
        
      - name: Terraform Plan
@@ -52,14 +54,14 @@ jobs:
          git clone https://github.com/maxxam123/platform01.git
          cd platform01/.github/workflows
          ls -la
-         rm -rf aws04.yaml
+         rm -rf aws06.yaml
          cd ../../../
          cd platform01/cluster
          ls -la
-         rm -rf aws04
+         rm -rf aws06
          cd ../../
          cd platform01/gitops
-         rm -rf aws04
+         rm -rf aws06
          cd ../..
 
      - name: Pushes to another repository
