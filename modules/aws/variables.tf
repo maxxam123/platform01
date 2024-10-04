@@ -1,3 +1,9 @@
+variable "name" {
+  description = "instance type name"
+  type = string
+  default = "user_01"
+}
+
 variable "instance_type" {
   description = "instance type t2.micro"
   type = string
