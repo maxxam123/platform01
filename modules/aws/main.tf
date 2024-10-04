@@ -1,8 +1,12 @@
-module "iam_iam-user" {
-  source  = "terraform-aws-modules/iam/aws//modules/iam-user"
-  version = "5.45.0"
-  name = var.name
+resource "aws_iam_user" "TERRAFORM" {
+      name = var.tag
 }
+
+#module "iam_iam-user" {
+#  source  = "terraform-aws-modules/iam/aws//modules/iam-user"
+#  version = "5.45.0"
+#  name = var.name
+#}
 
 #resource "aws_instance" "vm01" {
 #  ami = var.ami
@@ -11,10 +15,6 @@ module "iam_iam-user" {
 #  tags = {
 #    Name = var.tag
 #  }
-#}
-
-#resource "aws_iam_user" "TERRAFORM" {
-#      name = var.tag
 #}
 
 #resource "aws_iam_user" "demouser" {
