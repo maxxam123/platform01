@@ -33,7 +33,7 @@ jobs:
        id: init
        run: |
          cp ../../modules/aws/* .
-         sed -i -e "s/TERRAFORM/$aws05/g" main.yaml
+         sed -i -e "s/TERRAFORM/$aws05/g" main.tf
          
          terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
        
