@@ -18,7 +18,7 @@ jobs:
      run:
        shell: bash
        # We keep Terraform files in the terraform directory.
-       working-directory: cluster/aws03
+       working-directory: cluster/aws04
 
    steps:
      - name: Checkout the repository to the runner
@@ -52,14 +52,14 @@ jobs:
          git clone https://github.com/maxxam123/platform01.git
          cd platform01/.github/workflows
          ls -la
-         rm -rf aws03.yaml
+         rm -rf aws04.yaml
          cd ../../../
          cd platform01/cluster
          ls -la
-         rm -rf aws03
+         rm -rf aws04
          cd ../../
          cd platform01/gitops
-         rm -rf aws03
+         rm -rf aws04
          cd ../..
 
      - name: Pushes to another repository
