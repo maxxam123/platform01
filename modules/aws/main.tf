@@ -1,3 +1,9 @@
+module "iam_iam-user" {
+  source  = "terraform-aws-modules/iam/aws//modules/iam-user"
+  version = "5.45.0"
+  name = NAME
+}
+
 #resource "aws_instance" "vm01" {
 #  ami = var.ami
 #  instance_type = var.instance_type
@@ -11,6 +17,6 @@
 #      name = var.tag
 #}
 
-resource "aws_iam_user" "demouser" {
-      name = var.tag
-}
+#resource "aws_iam_user" "demouser" {
+#      name = var.tag
+#}
