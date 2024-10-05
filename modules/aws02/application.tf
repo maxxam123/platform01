@@ -25,8 +25,8 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: path/to/our/appofapps/repo
-    repoURL: https://gitlab.devops.usu.group/usu-operations/k8s-infrastructure/...
+    path: gitops/charts/NAME
+    repoURL: https://https://github.com/maxxam123/gitops.git
     targetRevision: main
     helm:
       valueFiles:
