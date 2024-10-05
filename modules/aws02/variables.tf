@@ -10,10 +10,10 @@ variable "eks" {
   default = "eks01"
 }
 
-variable "ami" {
+variable "application" {
   description = "ami"
   type = string
-  default = "ami-01e444924a2233b07"
+  default = "common"
 }
 
 variable "subnet_id" {
