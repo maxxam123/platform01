@@ -4,10 +4,10 @@ variable "vpc" {
   default = "vpc01"
 }
 
-variable "instance_type" {
+variable "eks" {
   description = "instance type t2.micro"
   type = string
-  default = "t2.micro"
+  default = "eks01"
 }
 
 variable "ami" {
