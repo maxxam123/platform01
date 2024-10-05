@@ -25,7 +25,7 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: gitops/charts/NAME
+    path: gitops/charts/TERRAFORM
     repoURL: https://https://github.com/maxxam123/gitops.git
     targetRevision: main
     helm:
