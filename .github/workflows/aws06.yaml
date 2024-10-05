@@ -36,7 +36,8 @@ jobs:
          cp ../../modules/aws02/provider.tf .
          cp ../../modules/aws02/vpc.tf .
          cp ../../modules/aws02/eks.tf .
-         sed -i -e "s/TERRAFORM/aws06/g" provider.tf     
+         cp ../../modules/aws02/variables.tf .
+         sed -i -e "s/TERRAFORM/aws06/g" provider.tf  
          terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
        
      - name: Terraform Plan
