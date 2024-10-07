@@ -28,12 +28,16 @@ jobs:
        uses: hashicorp/setup-terraform@v2
        with:
          terraform_version: 1.3.0
-
-     - name: Terraform init
-       id: init
+     - name: who am I
        run: |
-         cp ../../modules/aws/* .
-         terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
+         whoami
+         ls /
+         ls /home
+     #- name: Terraform init
+     #  id: init
+     #  run: |
+     #    cp ../../modules/aws/* .
+     #    terraform init -backend-config="bucket=dunhuang-gansu-terraform-state"
        
     #  - name: Terraform Plan
     #    run: terraform plan -lock=false
