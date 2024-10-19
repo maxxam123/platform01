@@ -25,7 +25,7 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: applicatioin/
+    path: application/TERRAFORM/
     repoURL: https://https://github.com/maxxam123/platform01.git
     targetRevision: main
     helm:
