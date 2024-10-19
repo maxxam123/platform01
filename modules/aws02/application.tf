@@ -25,8 +25,8 @@ spec:
     name: https://kubernetes.default.svc
   project: default
   source:
-    path: gitops/charts/var.application
-    repoURL: https://https://github.com/maxxam123/gitops.git
+    path: applicatioin/
+    repoURL: https://https://github.com/maxxam123/platform01.git
     targetRevision: main
     helm:
       valueFiles:
